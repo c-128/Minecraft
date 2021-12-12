@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('./minecraft-font.woff') format('opentype');
+}
+
+.mc {
+    font-family: 'minecraft';
+    margin: 0px;
+}
+
+// BUTTON
+.mc[class*="btn"] {
+    outline: #010000 0.1em solid;
+    border-top: #aaaaaa solid 0.1em;
+    border-left: #aaaaaa solid 0.1em;
+    border-bottom: #535353 solid 0.2em;
+    border-right: #535353 solid 0.1em;
+    background: url('assets/button_background.png');
+    color: white;
+    text-shadow: 0.1em 0.1em 0px #3f3f3f;
+}
+
+.mc[class*="btn"]:hover {
+    outline: #ffffff 0.1em solid;
+}
+
+.mc[class*="btn-disabled"] {
+    outline: #010000 0.1em solid;
+    border: none;
+    background: url('assets/button_disabled.png');
+}
+
+.mc[class*="btn-disabled"]:hover {
+    outline: #010000 0.1em solid;
+}
+
+// TEXT INPUT
+.mc[class*="text"] {
+    padding: 5px;
+    background-color: #000000;
+    border: #a0a0a0 0.1em solid;
+    color: #dddddd;
+    text-shadow: 0.1em 0.1em 0px #373737;
+}
+
+.mc[class*="text"]:focus {
+    border: #ffffff 0.1em solid;
+}
+
+// CARD
+.mc[class*="card"] {
+    border-top: #ffffff 0.2em solid;
+    border-left: #ffffff 0.2em solid;
+    border-right: #555555 0.2em solid;
+    border-bottom: #555555 0.2em solid;
+    background-color: #c6c6c6;
+    border-radius: 0.2em;
+    box-shadow: 0 0 0px 0.1em #000000;
+    padding: 0px;
+    margin: 0px;
+}
+
+// INV SLOT
+.mc[class*="inv-slot"] {
+    border-top: #373737 0.2em solid;
+    border-left: #373737 0.2em solid;
+    border-right: #ffffff 0.2em solid;
+    border-bottom: #ffffff 0.2em solid;
+    background-color: #8b8b8b;
+    width: 2em;
+    height: 2em;
+}
+
+// ITEM
+.mc[class*="item"] {
+    padding: 0.3em;
+    background-color: rgba(22, 5, 21, 0.9);
+    border: rgba(31, 4, 68, 0.9) solid 0.2em;
+    border-radius: 0.5em;
+}
+
+.mc[class*="item"] > * {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.mc[class*="item name"] {
+    color: #fbfbfb;
+    text-shadow: 0.1em 0.1em 0px #3e3e3e;
+    font-style: italic;
+}
+
+.mc[class*="item lore"] {
+    color: #a700a7;
+    text-shadow: 0.1em 0.1em 0px #290029;
+    font-style: italic;
+}
+
+.mc[class*="item durability"] {
+    color: #fcfcfc;
+    text-shadow: 0.1em 0.1em 0px #3e3e3e;
+}
+
+.mc[class*="item advanced-tooltips"] {
+    text-shadow: 0.1em 0.1em 0px #151515;
+    font-style: italic;
+}
+
+.mc[class*="item main-hand"] {
+    margin: 0px;
+
+    .title {
+        margin: 0px;
+        color: #a7a7a7;
+        text-shadow: 0.1em 0.1em 0px #292929;
+    }
+
+    .data {
+        margin: 0px;
+        margin-left: 1em;
+        color: #00a700;
+        text-shadow: 0.1em 0.1em 0px #002900;
+    }
+
+    .data * {
+        margin: 0px;
+    }
+}
+
+.mc[class*="item spacer"] {
+    height: 1.5em;
+}
+
+// COLORS
+.mc[class*="white"] {
+    color: #fafafa;
+    text-shadow: 0.1em 0.1em 0px #3d3d3d;
+}
+
+.mc[class*="black"] {
+    color: #000000;
+    text-shadow: 0.1em 0.1em 0px #000000;
+}
+
+.mc[class*="dark-blue"] {
+    color: #0000a8;
+    text-shadow: 0.1em 0.1em 0px #000029;
+}
+
+.mc[class*="dark-green"] {
+    color: #00a800;
+    text-shadow: 0.1em 0.1em 0px #002900;
+}
+
+.mc[class*="dark-aqua"] {
+    color: #00a8a8;
+    text-shadow: 0.1em 0.1em 0px #002929;
+}
+
+.mc[class*="dark-red"] {
+    color: #a80000;
+    text-shadow: 0.1em 0.1em 0px #290000;
+}
+
+.mc[class*="dark-purple"] {
+    color: #a800a8;
+    text-shadow: 0.1em 0.1em 0px #290029;
+}
+
+.mc[class*="gold"] {
+    color: #fca800;
+    text-shadow: 0.1em 0.1em 0px #3e2900;
+}
+
+.mc[class*="gray"] {
+    color: #a8a8a8;
+    text-shadow: 0.1em 0.1em 0px #292929;
+}
+
+.mc[class*="dark-gray"] {
+    color: #545454;
+    text-shadow: 0.1em 0.1em 0px #151515;
+}
+
+.mc[class*="blue"] {
+    color: #5454fc;
+    text-shadow: 0.1em 0.1em 0px #15153e;
+}
+
+.mc[class*="green"] {
+    color: #54fc54;
+    text-shadow: 0.1em 0.1em 0px #153e15;
+}
+
+.mc[class*="aqua"] {
+    color: #54fcfc;
+    text-shadow: 0.1em 0.1em 0px #153e3e;
+}
+
+.mc[class*="red"] {
+    color: #fc5454;
+    text-shadow: 0.1em 0.1em 0px #3e1515;
+}
+
+.mc[class*="light-purple"] {
+    color: #fc54fc;
+    text-shadow: 0.1em 0.1em 0px #3e153e;
+}
+
+.mc[class*="yellow"] {
+    color: #fcfc54;
+    text-shadow: 0.1em 0.1em 0px #3e3e15;
+}
+
+// FONT STYLE
+.mc[class*="italic"] {
+    font-style: italic;
+}
+
+.mc[class*="strikethrough"] {
+    text-decoration: line-through;
+}
+
+.mc[class*="underlined"] {
+    text-decoration: underline;
+}
+
+.mc[class*="bold"] {
+    font-weight: bold;
+}
+
+.mc[class*="default"] {
+    font-style: initial;
+    text-decoration: none;
+    font-weight: normal;
+}
