@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'minecraft';
-    src: url('./minecraft-font.woff') format('opentype');
+    src: url('https://raw.githubusercontent.com/c-128/Minecraft/master/minecraft-font.woff') format('opentype');
 }
 
 .mc {
@@ -15,7 +15,7 @@
     border-left: #aaaaaa solid 0.1em;
     border-bottom: #535353 solid 0.2em;
     border-right: #535353 solid 0.1em;
-    background: url('assets/button_background.png');
+    background: url('https://raw.githubusercontent.com/c-128/Minecraft/master/assets/button_background.png');
     color: white;
     text-shadow: 0.1em 0.1em 0px #3f3f3f;
 }
@@ -27,7 +27,7 @@
 .mc[class*="btn-disabled"] {
     outline: #010000 0.1em solid;
     border: none;
-    background: url('assets/button_disabled.png');
+    background: url('https://raw.githubusercontent.com/c-128/Minecraft/master/assets/button_disabled.png');
 }
 
 .mc[class*="btn-disabled"]:hover {
